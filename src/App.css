@@ -1,3 +1,43 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Plain Theme */
+  --color-plain-primary: #1E1A3A;
+  --color-plain-secondary: #D0D7E1;
+  --color-plain-accent: #D0D7E1;
+  --color-plain-background: #FFFFFF;
+  --color-plain-foreground: #2C2A3B;
+  --color-plain-muted: #D0D7E1;
+  --color-plain-muted-foreground: #3A4C67;
+
+  /* Pastel Theme */
+  --color-pastel-primary: #5CC7D1;
+  --color-pastel-secondary: #9E7CC6;
+  --color-pastel-accent: #D178D1;
+  --color-pastel-background: #F4F8A6;
+  --color-pastel-foreground: #2C2A3B;
+  --color-pastel-muted: #D0D7E1;
+  --color-pastel-muted-foreground: #3A4C67;
+
+  /* High Contrast Theme */
+  --color-high-contrast-primary: #36D700;
+  --color-high-contrast-secondary: #000000;
+  --color-high-contrast-accent: #36D700;
+  --color-high-contrast-background: #FFFFFF;
+  --color-high-contrast-foreground: #000000;
+  --color-high-contrast-muted: #E6E6E6;
+  --color-high-contrast-muted-foreground: #666666;
+
+  /* Common Colors */
+  --color-destructive: #F04837;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #A3B4D2;
+  --color-input: #A3B4D2;
+  --color-ring: #2C2A3B;
+}
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
