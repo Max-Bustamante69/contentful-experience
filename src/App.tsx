@@ -11,6 +11,9 @@ import "./registeredComponents.ts";
 import "./registeredDesignTokens.ts";
 import "./App.css";
 import { useParams } from "react-router-dom";
+import { Carousel } from "./components/Carousel/Carousel.tsx";
+import { CarouselItem } from "./components/Carousel/CarouselItem.tsx";
+import { Button } from "./components/Button/Button.tsx";
 
 
 
@@ -43,7 +46,23 @@ const App = () => {
 
   return (
     <>
+    <div className="flex flex-col items-center  h-screen justify-around">
+    
       <ExperienceRoot  experience={experience} locale={localeCode} />
+      <h1 className="text-4xl font-bold">React Carousel</h1>
+      <Carousel autoplay interval={5000} className="h-96">
+        <CarouselItem>
+          <Button variant={'destructive'} text="Button 1"/>
+        </CarouselItem>
+        <CarouselItem>
+          <Button variant={'ghost'} text="Button 2" />
+        </CarouselItem>
+        <CarouselItem>
+          <Button  text="Button 3"/>
+        </CarouselItem>
+      </Carousel>
+    </div>
+
     </>
   );
 };

@@ -11,6 +11,8 @@ import { Toggle } from "./components/Toggle/Toggle";
 import { toggleDefinition } from "./components/Toggle/toggleDefinition";
 import { Select } from "./components/Select/Select";
 import { selectDefinition } from "./components/Select/selectDefinition";
+import { Carousel } from "./components/Carousel/Carousel";
+import { carouselDefinition } from "./components/Carousel/carouselDefinition";
 
 defineComponents([
   {
@@ -33,5 +35,9 @@ defineComponents([
     component: Select,
     definition: selectDefinition
   },
-  
+  {
+    component: Carousel,
+    definition: carouselDefinition,
+    
+  },
 ]);
